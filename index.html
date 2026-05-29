@@ -413,7 +413,7 @@ function renderMonth() {
         var bg=CBGMAP[t.color]||'#ffd6e8',col=CTXMAP[t.color]||'#b84070';
         var imgEl='';
         if(t.images&&t.images.length){
-          imgEl='<img class="mchip-img" src="'+t.images[0]+'" onclick="event.stopPropagation();viewImg(''+key+'','+ti+',0)" alt="">';
+          imgEl='<img class="mchip-img" src="'+t.images[0]+'" onclick="event.stopPropagation();viewImg(\''+key+'\','+ti+',0)" alt="">';
         }
         chipsEl+='<div class="mchip-wrap">'+imgEl+'<div class="mchip" style="background:'+bg+';color:'+col+'">'+esc(t.text)+'</div></div>';
       });
